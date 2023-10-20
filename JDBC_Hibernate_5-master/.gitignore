@@ -1,0 +1,4 @@
+# Project exclude paths
+/005_Samples/005_Start_with_hibernate/.gradle/
+/005_Samples/005_Start_with_hibernate/build/
+/005_Samples/005_Start_with_hibernate/build/classes/main/

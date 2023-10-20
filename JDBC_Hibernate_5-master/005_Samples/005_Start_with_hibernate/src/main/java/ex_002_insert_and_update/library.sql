@@ -1,0 +1,16 @@
+CREATE DATABASE library;
+
+USE library;
+
+CREATE TABLE IF NOT EXISTS Author (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100)
+);
+
+CREATE TABLE IF NOT EXISTS Book (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    author_id INT,
+    FOREIGN KEY (author_id) REFERENCES Author(id)
+);
